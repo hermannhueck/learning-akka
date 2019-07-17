@@ -30,3 +30,7 @@ dist/*
 /bin/
 /.idea
 
+/output/
+
+.bloop/
+.metals/
