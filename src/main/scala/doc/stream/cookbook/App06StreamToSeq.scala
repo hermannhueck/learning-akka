@@ -5,7 +5,7 @@ import akka.stream.scaladsl.{Sink, Source}
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 
-object App06StreamToSeq extends AbstractApp {
+object App06StreamToSeq extends AkkaStreamApp {
 
   val mySource = Source(1 to 3).map(_.toString)
 

@@ -6,7 +6,7 @@ import akka.stream.scaladsl.{Sink, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App10aWordCount extends AbstractApp {
+object App10aWordCount extends AkkaStreamApp {
 
   val MaximumDistinctWords = 1000
 

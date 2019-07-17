@@ -6,7 +6,7 @@ import akka.stream.scaladsl.{Flow, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App15MissedTicks extends AbstractApp {
+object App15MissedTicks extends AkkaStreamApp {
 
   def missedTicks[T]: Flow[T, Int, NotUsed] =
     Flow[T].conflateWithSeed(seed = _ => 0)((missedTicks, tick) => missedTicks + 1)

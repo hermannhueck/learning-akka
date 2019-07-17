@@ -11,7 +11,7 @@ import akka.util.ByteString
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App07CalculatingDigest extends AbstractApp {
+object App07CalculatingDigest extends AkkaStreamApp {
 
   val data: Source[ByteString, NotUsed] = Source.single(ByteString("abc"))
 

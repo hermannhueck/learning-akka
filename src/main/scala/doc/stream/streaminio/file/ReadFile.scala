@@ -13,7 +13,7 @@ import scala.concurrent.{Await, ExecutionContext, Future}
 
 object ReadFile extends App {
 
-  implicit val system: ActorSystem = ActorSystem("LogError")
+  implicit val system: ActorSystem = ActorSystem("ReadFile")
   implicit val materializer: ActorMaterializer = ActorMaterializer()
   implicit val ec: ExecutionContext = system.dispatcher
 

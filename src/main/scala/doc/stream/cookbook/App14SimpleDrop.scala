@@ -6,7 +6,7 @@ import akka.stream.scaladsl.{Flow, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App14SimpleDrop extends AbstractApp {
+object App14SimpleDrop extends AkkaStreamApp {
 
   def droppyStream[T]: Flow[T, T, NotUsed] =
     Flow[T].conflate((lastMessage, newMessage) => newMessage)

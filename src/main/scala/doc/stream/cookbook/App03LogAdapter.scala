@@ -6,7 +6,7 @@ import akka.stream.scaladsl.{Sink, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App03LogAdapter extends AbstractApp {
+object App03LogAdapter extends AkkaStreamApp {
 
   val mySource = Source(List("1", "2", "3"))
 

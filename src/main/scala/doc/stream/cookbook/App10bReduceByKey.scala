@@ -6,7 +6,7 @@ import akka.stream.scaladsl.{Flow, Sink, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App10bReduceByKey extends AbstractApp {
+object App10bReduceByKey extends AkkaStreamApp {
 
   def reduceByKey[In, K, Out](maximumGroupSize: Int,
                               groupKey: In => K,

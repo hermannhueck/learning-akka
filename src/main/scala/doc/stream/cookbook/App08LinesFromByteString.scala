@@ -6,7 +6,7 @@ import akka.util.ByteString
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App08LinesFromByteString extends AbstractApp {
+object App08LinesFromByteString extends AkkaStreamApp {
 
   val rawData = Source(
     List(

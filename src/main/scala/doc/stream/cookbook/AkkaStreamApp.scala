@@ -3,7 +3,7 @@ package doc.stream.cookbook
 import akka.actor.ActorSystem
 import akka.stream._
 
-abstract class AbstractApp extends App {
+abstract class AkkaStreamApp extends App {
 
   val temp = getClass.getSimpleName
   val appName = temp.substring(0, temp.length - 1)

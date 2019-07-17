@@ -5,7 +5,7 @@ import akka.stream.scaladsl.{Sink, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App01PrintlnDebug extends AbstractApp {
+object App01PrintlnDebug extends AkkaStreamApp {
 
   val mySource = Source(List("1", "2", "3"))
 

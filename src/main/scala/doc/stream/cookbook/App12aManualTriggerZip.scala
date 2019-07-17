@@ -8,7 +8,7 @@ import akka.stream.scaladsl.{Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
 import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 
-object App12aManualTriggerZip extends AbstractApp {
+object App12aManualTriggerZip extends AkkaStreamApp {
 
   type Trigger = Unit
   type Message = String

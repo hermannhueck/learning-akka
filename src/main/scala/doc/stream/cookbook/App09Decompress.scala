@@ -7,7 +7,7 @@ import akka.util.ByteString
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App09Decompress extends AbstractApp {
+object App09Decompress extends AkkaStreamApp {
 
   import akka.stream.scaladsl.Compression
 

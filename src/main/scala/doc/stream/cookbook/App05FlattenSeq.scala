@@ -6,7 +6,7 @@ import akka.stream.scaladsl.{Sink, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App05FlattenSeq extends AbstractApp {
+object App05FlattenSeq extends AkkaStreamApp {
 
   type Message = String
 

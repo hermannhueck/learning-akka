@@ -7,7 +7,7 @@ import akka.stream.scaladsl.{Balance, Flow, GraphDSL, Merge, Sink, Source}
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App13WorkerPool extends AbstractApp {
+object App13WorkerPool extends AkkaStreamApp {
 
   val list = (1 to 10).toList
   val myJobs = Source(list)

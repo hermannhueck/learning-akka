@@ -14,7 +14,7 @@ import scala.concurrent.{Await, Future}
 
 object Factorials4 extends App {
 
-  implicit val system: ActorSystem = ActorSystem("reactive-tweets")
+  implicit val system: ActorSystem = ActorSystem("Factorials4")
   implicit val materializer: ActorMaterializer = ActorMaterializer()
 
   val source: Source[Int, NotUsed] = Source(1 to 100)

@@ -7,7 +7,7 @@ import scala.collection.immutable
 import scala.concurrent.Await
 import scala.concurrent.duration._
 
-object App11MultiGroupBy extends AbstractApp {
+object App11MultiGroupBy extends AkkaStreamApp {
 
   type Message = String
 

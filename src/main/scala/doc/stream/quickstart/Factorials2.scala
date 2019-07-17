@@ -14,7 +14,7 @@ import scala.concurrent.{Await, Future}
 
 object Factorials2 extends App {
 
-  implicit val system: ActorSystem = ActorSystem("reactive-tweets")
+  implicit val system: ActorSystem = ActorSystem("Factorials2")
   implicit val materializer: ActorMaterializer = ActorMaterializer()
 
   val source: Source[Int, NotUsed] = Source(1 to 100)
@@ -26,7 +26,7 @@ object Factorials2 extends App {
   val result: Future[IOResult] =
     factorials
       .map(_.toString)
-      .runWith(lineSink("factorial2.txt"))
+      .runWith(lineSink("output/factorial2.txt"))
 
   println(Await.result(result, 3.seconds))
   Await.result(system.terminate(), 3.seconds)

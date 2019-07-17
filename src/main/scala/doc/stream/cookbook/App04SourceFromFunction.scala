@@ -9,7 +9,7 @@ import scala.collection.immutable
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 
-object App04SourceFromFunction extends AbstractApp {
+object App04SourceFromFunction extends AkkaStreamApp {
 
   def builderFunction(): String = UUID.randomUUID.toString
 

@@ -8,7 +8,7 @@ import akka.{Done, NotUsed}
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 
-object App12bManualTriggerZipWith extends AbstractApp {
+object App12bManualTriggerZipWith extends AkkaStreamApp {
 
   type Trigger = Unit
   type Message = String
